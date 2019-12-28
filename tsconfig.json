@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "allowJs": true,
+    "lib": ["dom", "es2017"],
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*"]
+}

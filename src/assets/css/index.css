@@ -1,0 +1,38 @@
+html,
+body,
+#root {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #e74c3c;
+}
+
+.main {
+  margin: 0 auto;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.header {
+  font-size: 32px;
+}
+
+.time {
+  font-size: 56px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.button {
+  margin-top: 24px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+}
