@@ -114,6 +114,15 @@ const Root: FC = () => {
         >
           {delay !== null ? "STOP" : "START"}
         </button>
+        <button
+          className="button"
+          onClick={() => {
+            setMinutes(work);
+            setSeconds(0);
+          }}
+        >
+          RESTART
+        </button>
       </div>
     </>
   );
