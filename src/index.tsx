@@ -1,6 +1,8 @@
 import React, { FC, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+
 import useInterval from "./useInterval";
+import useNotification from "./useNotification";
 
 import "./assets/css/index.css";
 
@@ -53,20 +55,25 @@ const Root: FC = () => {
 
   const [delay, setDelay] = useState<number | null>(null);
 
+  const { notify } = useNotification();
+
   useInterval(() => {
+    if (minutes === 1 && seconds === 0) {
+      notify("1 minutes left. Please prepare.");
+    }
+
     // Done resting, or working
     if (minutes === 0 && seconds === 0) {
-      // TODO: Send notification
       if (status === "work") {
         setMinutes(restShort);
         setSeconds(0);
         setStatus("restShort");
-        alert("Time to Rest!");
+        notify("Time to rest...!");
       } else {
         setMinutes(work);
         setSeconds(0);
         setStatus("work");
-        alert("Time to Work!");
+        notify("Time to work...!");
       }
 
       return;
