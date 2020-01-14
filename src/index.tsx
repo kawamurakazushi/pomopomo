@@ -126,6 +126,7 @@ const Root: FC = () => {
           onClick={() => {
             setMinutes(work);
             setSeconds(0);
+            setStatus("work");
           }}
         >
           RESTART
