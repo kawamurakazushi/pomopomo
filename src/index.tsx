@@ -106,7 +106,7 @@ const Root: FC = () => {
 
   return (
     <>
-      <div className="main">
+      <div className={`main ${status === "work" ? "work" : "rest"}`}>
         <div className="header">PomoPomo</div>
         <div className="time">{time}</div>
         <button

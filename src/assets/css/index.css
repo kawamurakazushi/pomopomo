@@ -3,7 +3,17 @@ body,
 #root {
   margin: 0;
   font-family: "Nunito", sans-serif;
+  height: 100%;
+}
+
+#root .rest {
+  background-color: #0e9af1;
+  height: 100%;
+}
+
+#root .work {
   background-color: #e74c3c;
+  height: 100%;
 }
 
 .main {
